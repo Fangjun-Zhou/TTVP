@@ -4,4 +4,4 @@ venv/
 
 data/
 
-checkpoints.zip
+checkpoints*

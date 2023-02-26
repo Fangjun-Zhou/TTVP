@@ -52,6 +52,8 @@ class TitlePredictor(nn.Module):
         x = self.dropout(x)
         x = F.relu(x)
         x = self.fc2(x)
+        x = self.dropout(x)
+        x = F.relu(x)
         prediction = self.linear(x)
         # prediction: [batch size, 1]
         return prediction
