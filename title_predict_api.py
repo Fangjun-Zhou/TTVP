@@ -20,7 +20,7 @@ vocab: Vocab = load_vocab("models/title-predictor/vocab.pt")
 # Load tokenizer.
 tokenizer = get_tokenizer("basic_english")
 # Load model.
-model = torch.load("models/title-predictor/best_val_3.09.pt")
+model = torch.load("models/title-predictor/best_val_2.59.pt")
 predictor = TitlePredictor(
     vocabSize=model["vocabSize"],
     embeddingSize=model["embeddingSize"],
