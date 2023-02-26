@@ -6,3 +6,4 @@ data/
 
 checkpoints.zip
 best_cv.pt
+best_model.pt

@@ -4,7 +4,7 @@ import torchvision.transforms as transforms
 from PIL import Image
 
 cv_model = ContentToViews()
-cv_model.load_state_dict(torch.load("best_cv.pt"))
+cv_model.load_state_dict(torch.load("best_model.pt"))
 
 
 def predict_image(image) -> float:
