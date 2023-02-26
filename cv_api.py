@@ -20,4 +20,5 @@ def predict_image(image) -> float:
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225))
     ])
     image = transform(image).unsqueeze(0)
+
     return int(torch.exp(cv_model(image)).item())
